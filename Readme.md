@@ -1,10 +1,4 @@
-# Change enviroment in python 
-
-Certainly! Here's how you can structure the README file to include the steps for setting up a virtual environment and installing packages for the project only:
-
----
-
-# Project Name
+# Python codes for DSA / ML / AI
 
 ## Description
 
