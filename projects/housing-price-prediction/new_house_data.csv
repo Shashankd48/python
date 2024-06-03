@@ -1,0 +1,4 @@
+area,bedrooms,bathrooms,stories,mainroad,guestroom,basement,hotwaterheating,airconditioning,parking,prefarea,furnishingstatus
+area_1,3,1,2,yes,no,yes,no,yes,2,yes,furnished
+area_2,4,2,3,no,yes,no,no,no,1,no,semi-furnished
+area_3,2,1,1,yes,no,no,no,no,0,no,unfurnished
