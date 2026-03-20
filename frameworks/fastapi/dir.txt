@@ -1,0 +1,27 @@
+todo-api/
+├─ app/
+│  ├─ __init__.py
+│  ├─ main.py                 # FastAPI app, include routers, startup/shutdown
+│  ├─ core/
+│  │  ├─ config.py            # Settings via Pydantic BaseSettings
+│  │  └─ logging.py
+│  ├─ db/
+│  │  ├─ client.py            # Motor client + connect/disconnect
+│  │  └─ indexes.py
+│  ├─ models/
+│  │  ├─ todo.py              # DB model helpers (ObjectId type)
+│  ├─ schemas/
+│  │  ├─ todo.py              # Pydantic request/response schemas
+│  ├─ repositories/
+│  │  └─ todo_repo.py         # DB access (Motor) - repository pattern
+│  ├─ services/
+│  │  └─ todo_service.py      # Business logic (optional)
+│  ├─ api/
+│  │  └─ v1/
+│  │     └─ todos.py          # Router (endpoints)
+│  └─ tests/
+│     └─ test_todos.py
+├─ Dockerfile
+├─ docker-compose.yml
+├─ pyproject.toml / requirements.txt
+└─ README.md

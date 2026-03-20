@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:6
+    volumes:
+      - mongo-data:/data/db
+    ports: ["27017:27017"]
+    # For transactions/replica set, init replset or use a replicated setup (see notes)
+  web:
+    build: .
+    depends_on:
+      - mongo
+    ports:
+      - "8000:80"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+volumes:
+  mongo-data:
